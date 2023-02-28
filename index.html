@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:ital,wght@0,300;1,100&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+    <header class="sgrid">
+
+      <section class="navigation">
+
+        <img src="/images/logo.svg" alt="logo">
+        
+        <nav>
+          <ul class="contents list-none">
+            <li>About</li>
+            <li>Careers</li>
+            <li>Events</li>
+            <li>Products</li>
+            <li>Support</li>
+          </ul>
+        </nav>
+
+
+
+        <span class="mobile-nav">
+          <img src="/images/icon-hamburger.svg" alt="" class="open-btn">
+          <img src="/images/icon-close.svg" alt="" class="close-btn">
+        </span>
+
+
+      </section>
+      
+
+
+
+      <h1 class="size-1 light ucase clr-light">Immersive experiences that deliver</h1>
+      
+
+
+
+
+
+
+    </header>
+
+
+    <section class="hero sgrid">
+
+
+
+      <img src="/images/desktop/image-interactive.jpg" alt="">
+      <article class="grid">
+        <h2 class="ucase size-2 lh-head light">The Leader in Interactive V.R.</h2>
+        <p class="clr-dgray">Founded in 2011, Loopstudios has been producing world-class virtual reality projects for some of the best companies around the globe. Our award-winning creations have transformed businesses through digital experiences that bind to their brand.</p>
+      </article>
+
+
+
+    </section>
+
+    <section class="creations sgrid light">
+
+
+      <figure class="flex">
+        <h3 class="size-2 ucase light">Our Creations</h3>
+        <button>See All</button>
+      </figure>
+      <ul class="list-none">
+        <div class="creation">
+          <img src="/images/desktop/image-deep-earth.jpg" alt="deep earth">
+          <strong>Deep Earth</strong>
+        </div>
+
+
+
+
+        <div class="creation">
+          <img src="/images/desktop/image-night-arcade.jpg" alt="deep earth">
+          <strong>Night Arcade</strong>
+        </div>
+
+
+        <div class="creation">
+          <img src="/images/desktop/image-soccer-team.jpg" alt="deep earth">
+          <strong>Soccer Team VR</strong>
+        </div>
+
+
+        <div class="creation">
+          <img src="/images/desktop/image-grid.jpg" alt="deep earth">
+          <strong>The Grid</strong>
+        </div>
+
+        <div class="creation">
+          <img src="/images/desktop/image-from-above.jpg" alt="deep earth">
+          <strong>From Up Above VR</strong>
+        </div>
+
+
+
+        
+        <div class="creation">
+          <img src="/images/desktop/image-pocket-borealis.jpg" alt="deep earth">
+          <strong>Pocket Borealis</strong>
+        </div>
+
+
+        
+        <div class="creation">
+          <img src="/images/desktop/image-curiosity.jpg" alt="deep earth">
+          <strong>The Curiosity</strong>
+        </div>
+
+        
+        <div class="creation">
+          <img src="/images/desktop/image-fisheye.jpg" alt="deep earth">
+          <strong>The Fisheye</strong>
+        </div>
+
+
+
+      </ul>
+
+
+
+      <button>See All</button>
+
+
+
+
+    </section>
+
+
+    <footer class="sgrid">
+      <div>
+
+        <section class="navigation">
+          
+          <img src="/images/logo.svg" alt="logo">
+          
+          <nav>
+            <ul class="contents list-none">
+              <li>About</li>
+              <li>Careers</li>
+              <li>Events</li>
+              <li>Products</li>
+              <li>Support</li>
+            </ul>
+          </nav>
+        
+        
+        </section>
+
+
+
+
+
+        <section class="social">
+
+
+
+          <div>
+              <img src="/images/icon-facebook.svg" alt="facebook">
+              <img src="/images/icon-twitter.svg" alt="twitter">
+              <img src="/images/icon-pinterest.svg" alt="pinterest">
+              <img src="/images/icon-instagram.svg" alt="instagram">
+          </div>
+
+
+          <p class="clr-dgray">&copy; 2021 Loopstudios. All rights reserved.</p>
+
+
+
+        </section>
+      </div>
+    </footer>
+
+
+
+
+
+    <script type="module" src="/src/main.js"></script>
+
+
+
+
+    <script>
+
+      const header = document.querySelector('header')
+      const mobileNav = document.querySelector('.mobile-nav');
+      const openBtn = mobileNav.querySelector('.open-btn')
+      const closeBtn = mobileNav.querySelector('.close-btn')
+
+
+
+
+      openBtn.addEventListener('click', _ => {
+        header.classList.add('open')
+      })
+
+
+
+      
+      closeBtn.addEventListener('click', _ => {
+        header.classList.remove('open')
+      })
+
+
+    </script>
+  </body>
+</html>
